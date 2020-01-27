@@ -1,0 +1,106 @@
+%-- 01/27/2020 08:25:52 AM --%
+mkdir lab0
+cd lab0/
+cd
+cd lab0/
+cd ..
+cd lab0/
+a = 1
+b=2
+c=3
+A=[1 2 ;3 4]
+B= [3 4;5 6 ]
+C=A*B
+C=A.*B
+%Uzzimesim 2. kartas polinomu
+%y = a*x^2+b*x+c
+%polinoma koef. a,b,c
+%saglabassim vektora c
+C= [ 2 3 4];
+%efinesim x
+x= [-6 -4 -2 0 2 4 6];
+%vai ari to var pierakstit ta:
+x= -6:-2:6;
+%kas nozime:
+%sakuma+elements:solis:beigas solis
+x= -6:-2:6;
+x= -6:-2:6
+x= -6:2:6
+%aprekinasim y
+y=C(1)*x^2+C(2)*x+C(3)
+y=C(1)*x.^2+C(2)*x+C(3)
+%zimesim grafiku
+%zime grafiku ar plot
+%sintakse : plot(x,y)
+plot (x,y)
+%ko darit lai nebutu lauzta linija
+%ir jasamazina solis
+x2= -6:0.01:6;
+y2=C(1)*x2.^2+C(2)*x2+C(3)
+y2=C(1)*x2.^2+C(2)*x2+C(3);
+plot (x2,y2)
+x2= -7:0.01:5;
+plot (x2,y2)
+x2= -6:0.01:6;
+plot (x,x2,y,y2)
+plot (x,y,x2,y2)
+plot (x,y,'o')
+plot (x2,y2,'o')
+plot (x,y,'- -')
+plot (x,y,'--')
+help plot
+plot (x,y,'-.m*')
+plot (x,y,'.co')
+plot (x,y,'-co')
+%citas grafiskas funkcijas
+stem(x,y)
+stairs(x,y)
+createfigure(x,y)
+close all
+%aizver visus grafikus
+%ka zimet vairakus grafikus -
+%part 2
+staris(x,y)
+stairs(x,y)
+hold on
+plot(x2,y2)
+hold off
+stem(x,y)
+%hold on iesledza asis
+%hold off izsledz to rezimu
+stem(x,y)
+%zimesim lisazu figuras
+%talako kodu raksisim Editora
+edit
+help lisazu
+lisazu
+lisazu_funk(2,4)
+lisazu_funk(20,4)
+lisazu_funk(20,9)
+lisazu_funk(20,10)
+lisazu_funk(20,11)
+lisazu_funk(20,12)
+lisazu_funk(19,12)
+lisazu_funk(21,13)
+lisazu_funk(21,12)
+lisazu_funk(21,9)
+lisazu_funk(21,16)
+lisazu_funk(21,18)
+lisazu_funk(20,12)
+lisazu_funk(21,13)
+lisazu_fun_anim(5,6)
+lisazu_funk(20,12)
+lisazu_funk(21,13)
+lisazu_funk(2,4)
+lisazu_funk(96,26)
+lisazu_funk(96,56)
+lisazu_funk(96,86)
+lisazu_funk(100,25)
+lisazu_funk(101,26)
+lisazu_fun_anim(21,9)
+lisazu_fun_anim(21,10)
+lisazu_fun_anim(10,10)
+lisazu_fun_anim(10,5)
+lisazu_fun_anim(22,14)
+lisazu_fun_anim(22,15)
+lisazu_fun_anim(22,13)
